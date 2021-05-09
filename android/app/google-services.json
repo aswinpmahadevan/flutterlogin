@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "90063900414",
+    "project_id": "cropyield-2df81",
+    "storage_bucket": "cropyield-2df81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90063900414:android:82577e62c3aa0c17d29faf",
+        "android_client_info": {
+          "package_name": "com.example.cropyield"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90063900414-2of2mglicc18keieopj68220ulnqcf5r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cropyield",
+            "certificate_hash": "b0927a3d0aef5c8078a6dde72380f9a97ad3f513"
+          }
+        },
+        {
+          "client_id": "90063900414-hmvacqrj3t3g1jfa7376umuksmiu6i95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGaynzXIkKwQcf5VqVrDvVnRYPmfXEjck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90063900414-hmvacqrj3t3g1jfa7376umuksmiu6i95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
