@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cropyield/pages/loginScreen.dart';
-import 'package:cropyield/pages/tasks.dart';
+import 'package:cropyield/pages/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           FirebaseUser user = snapshot.data;
-          return TasksPage(uid: user.uid);
+          return home(uid: user.uid);
         } else {
           return LoginScreen();
         }

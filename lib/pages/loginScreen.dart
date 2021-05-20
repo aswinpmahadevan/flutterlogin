@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cropyield/controllers/authentications.dart';
 import 'package:cropyield/pages/signupScreen.dart';
-import 'package:cropyield/pages/tasks.dart';
+import 'package:cropyield/pages/home.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -23,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
           Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                builder: (context) => TasksPage(uid: value.uid),
+                builder: (context) => home(uid: value.uid),
               ));
         }
       });
@@ -159,7 +159,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         await FirebaseAuth.instance.currentUser();
 
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => TasksPage(uid: user.uid)));
+                        builder: (context) => home(uid: user.uid)));
                   }),
                   child: Image(
                     image: AssetImage('images/signin.png'),
